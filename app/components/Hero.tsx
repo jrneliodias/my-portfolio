@@ -1,10 +1,30 @@
+import { SocialMedia } from "@/static/SocialMedia";
 import Image from "next/image";
 
 export default function Hero() {
     return (
 
-        <div id="Hero" className="flex justify-center items-center p-4 bg-gray-800 h-screen text-white min-w-full">
-            <p>Hero</p>
+        <div id="Hero" className="flex flex-col items-center px-20 bg-gray-800 min-h-screen text-white min-w-full">
+            <div className="flex flex-col-reverse gap-4 justify-center lg:flex-row items-center w-full lg:gap-10 flex-1 ">
+
+                <div className="flex flex-col z-20 pointer-events-none text-white w-5/6 lg:w-3/5 items-start lg:flex-1 ">
+                    <p className="text-5xl lg:text-6xl font-bold w-full">Olá, meu nome é <span className="font-black text-blue-500">Nélio Dias</span>
+                    </p>
+                    <p className="text-3xl lg:text-4xl">um desenvolvedor Web Full Stack</p>
+                    <div className="flex mt-6 justify-start w-[17vw]">
+                        <SocialMedia size={30} />
+                    </div>
+                </div>
+
+                <Image className="w-full sm:w-3/5 lg:w-2/5 max-w-xl object-contain self-center animate-scalepulse rounded-xl
+                bg-blend-multiply	
+                "
+                    width={800}
+                    height={50}
+                    alt="portrait"
+                    src="/web-programmer.png" />
+
+            </div>
         </div>
 
 
