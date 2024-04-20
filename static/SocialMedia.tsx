@@ -1,7 +1,7 @@
 import { Github, Linkedin } from "lucide-react"
 import Link from "next/link"
 
-export const SocialMedia = ({ size }: { size: number }) => {
+const SocialMedia = ({ size }: { size: number }) => {
 
     return (
         <div className="flex justify-center gap-2 pb-4"
@@ -23,3 +23,5 @@ export const SocialMedia = ({ size }: { size: number }) => {
         </div>
     )
 }
+
+export default SocialMedia;
