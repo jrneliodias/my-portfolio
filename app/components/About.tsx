@@ -3,7 +3,7 @@ import Timeline from "@/static/Timeline";
 
 export default function About() {
     return (
-        <div id="About" className="flex justify-center items-center bg-slate-800 h-screen text-white">
+        <section id="About" className="flex justify-center items-center bg-slate-800 h-screen text-white">
             <div className="flex justify-center items-center text-white">
                 <div className="flex flex-col lg:flex-row w-full">
                     <div className="flex w-full p-5 g:w-1/2 flex-col lg:p-20">
@@ -14,6 +14,6 @@ export default function About() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Hero() {
     return (
 
-        <div id="Hero" className="flex flex-col items-center px-20 bg-gray-900 min-h-screen text-white min-w-full">
+        <section id="Hero" className="flex flex-col items-center px-20 bg-gray-900 min-h-screen text-white min-w-full">
             <div className="flex flex-col-reverse gap-5 justify-center lg:flex-row items-center w-full lg:gap-10 flex-1 ">
 
                 <div className="flex flex-col z-20 gap-2 pointer-events-none text-white w-5/6 lg:w-3/5 items-start lg:flex-1 ">
@@ -25,7 +25,7 @@ export default function Hero() {
                     src="/web-programmer.png" />
 
             </div>
-        </div>
+        </section>
 
 
     )
