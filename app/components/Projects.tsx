@@ -8,6 +8,7 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel"
+import Link from "next/link";
 
 projectData
 export default function Projects() {
@@ -20,16 +21,19 @@ export default function Projects() {
                 <Carousel className="flex items-center w-11/12 lg:w-full h-full  lg:max-w-[80%]">
                     <CarouselContent>
                         {projectData.map((project, index) => (
-                            <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/4">
-                                <ProjectCard
-                                    key={index}
-                                    title={project.title}
-                                    text={project.text}
-                                    image={project.image}
-                                    link={project.link}
-                                    tags={project.tags}
-                                />
-                            </CarouselItem>
+                            <Link key={index} href={`projects/${encodeURIComponent(index)}`}>
+                                <CarouselItem className="md:basis-1/2 lg:basis-1/4">
+                                    <ProjectCard
+                                        key={index}
+                                        title={project.title}
+                                        text={project.text}
+                                        image={project.image}
+                                        link={project.link}
+                                        tags={project.tags}
+                                    />
+                                </CarouselItem>
+                            </Link>
+
                         ))}
                     </CarouselContent>
                     <CarouselPrevious />
