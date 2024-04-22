@@ -4,12 +4,12 @@ import Tag from "./Tag"
 
 const Timeline = () => {
     return (
-        <div className="text-lg">
+        <div className="text-sm lg:text-lg">
             {timelineData.map((item, index) => (
                 <div key={"W" + index} className="flex gap-5 py-2">
                     <div>
-                        <div className="flex justify-center items-center text-white rounded-full w-20 h-20 bg-slate-600 ">
-                            <div className="flex justify-center items-center  h-[72px] w-[72px] font-bold bg-slate-800 rounded-full">
+                        <div className="flex justify-center items-center text-white rounded-full w-16 h-16 lg:w-20 lg:h-20 bg-slate-600 ">
+                            <div className="flex justify-center items-center w-14 h-14 lg:h-[72px] lg:w-[72px] font-bold bg-slate-800 rounded-full">
                                 {item.year}
                             </div>
                         </div>
