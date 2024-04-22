@@ -12,6 +12,8 @@ export default function Navbar() {
             `${isAtTop ? "opacity-100"
                 : "opacity-0 hover:opacity-100 transition-opacity duration-500"}`,
         )}>
+            <div />
+            <div />
             <MenuItem title="About" />
             <MenuItem title="Projects" />
             <MenuItem title="Services" />

@@ -8,7 +8,6 @@ import Projects from "./components/Projects";
 export default function Home() {
   return (
     <main className="w-screen">
-      <Navbar />
       <Hero />
       <About />
       <Projects />
