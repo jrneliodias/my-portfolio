@@ -7,7 +7,7 @@ import Projects from "./components/Projects";
 
 export default function Home() {
   return (
-    <main className="w-screen">
+    <main className="w-screen max-w-screen">
       <Hero />
       <About />
       <Projects />
