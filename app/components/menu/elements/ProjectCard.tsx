@@ -19,12 +19,12 @@ const ProjectCard = ({
 }: ProjectCardProps) => {
 
     return (
-        <Card className="bg-black shadow-sm text-white max-w-80 scale-100 transition-all hover:scale-[101%] bg-opacity-20 overflow-hidden">
+        <Card className="bg-black shadow-sm text-white max-w-80 min-w-72 scale-100 transition-all hover:scale-[101%] bg-opacity-20 overflow-hidden">
             <Image
                 src={image}
                 height={300}
                 width={400}
-                alt="next"
+                alt="image"
             />
             <CardHeader>
                 <CardTitle>{title}</CardTitle>
