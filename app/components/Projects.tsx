@@ -26,7 +26,7 @@ export default function Projects() {
                                     <ProjectCard
                                         key={index}
                                         title={project.title}
-                                        text={project.text}
+                                        text={project.resume}
                                         image={project.image}
                                         link={project.link}
                                         tags={project.tags}

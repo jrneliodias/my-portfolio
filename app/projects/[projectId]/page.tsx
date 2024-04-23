@@ -1,8 +1,11 @@
 "use client"
 
+import { Button } from "@/components/ui/button"
 import { projectData } from "@/constants/constant"
 import Tag from "@/static/Tag"
+import { Github } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
 import { useParams } from "next/navigation"
 
 const ProjectPage = () => {
@@ -13,9 +16,30 @@ const ProjectPage = () => {
     return (
         <div className="w-screen h-screen px-8 py-20 flex items-center gap-5 bg-slate-800 text-white">
             <div className="flex flex-col h-5/6 w-1/2 gap-5">
-                <h1 className="text-3xl font-extrabold">{project.title}</h1>
-                <p className="text-lg">{project.text}</p>
-                <p>link do projeto: {project.link}</p>
+                <h1 className="text-2xl lg:text-3xl font-extrabold">{project.title}</h1>
+                <div className=" lg:text-lg flex flex-col gap-2">
+                    {project.text.map((tag, index) => (
+                        <p
+                            key={index}
+                        >
+                            {tag}
+                        </p>
+                    ))}
+                </div>
+                <div className="flex items-center gap-5">
+
+                    <Button
+                        variant={"default"}
+                        asChild
+                        className="flex gap-2 max-w-40"
+                    >
+                        <Link href={project.link}>
+                            <Github />
+                            Repositório
+                        </Link>
+                    </Button>
+
+                </div>
                 <div className=" flex gap-2">
                     {project.tags.map((tag, index) => (
                         <Tag
