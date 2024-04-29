@@ -25,13 +25,13 @@ const Timeline = () => {
                                 {item.company}
                             </span>
                         </div>
-                        <p className="">
+                        <ul className="">
                             {item.tasks.map((task, index) => (
-                                <p className=" mr-1.5"
+                                <li className=" mr-1.5"
                                     key={"t" + index}>
                                     {task}
-                                </p>))}
-                        </p>
+                                </li>))}
+                        </ul>
                         <ul className="mt-1 flex flex-wrap gap-y-2" aria-label="Technologies used:">
                             {item.tags.map((tag, index) => (
                                 <li className=" mr-1.5"

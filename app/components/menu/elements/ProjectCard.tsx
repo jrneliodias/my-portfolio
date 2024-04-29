@@ -1,13 +1,12 @@
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import Tag from "@/static/Tag";
 import Image from "next/image";
-import Link from "next/link";
 
 type ProjectCardProps = {
     title: string
     text: string
-    image: string
-    link: string
+    image: string[]
+    link: string[]
     tags: string[]
 }
 
@@ -21,9 +20,9 @@ const ProjectCard = ({
 
     return (
 
-        <Card className="bg-black shadow-sm h-full text-white max-w-96 min-w-72 scale-100 transition-all hover:scale-[101%] bg-opacity-20 overflow-hidden">
+        <Card className="bg-black shadow-sm h-full text-white max-w-5xl min-w-96 scale-100 transition-all hover:scale-[101%] bg-opacity-20 overflow-hidden">
             <Image
-                src={image}
+                src={image[0]}
                 height={0}
                 width={0}
                 alt="image"
