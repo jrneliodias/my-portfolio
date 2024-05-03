@@ -1,6 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
 import { projectData } from "@/constants/constant"
 import Tag from "@/static/Tag"
 import { Github, Rocket, Satellite } from "lucide-react"
@@ -15,14 +16,22 @@ const ProjectPage = () => {
 
     return (
         <div className="w-screen h-screen px-8 py-20 flex items-center gap-10 bg-slate-800 text-white">
-            <div className="flex flex-col h-5/6 w-1/2 gap-5">
+            <div className="flex flex-col h-5/6 w-1/2 gap-8">
                 <h1 className="text-2xl lg:text-3xl font-extrabold">{project.title}</h1>
+                <div className=" flex gap-2 flex-wrap">
+                    {project.tags.map((tag, index) => (
+                        <Tag
+                            key={index}
+                            title={tag}
+                        />
+                    ))}
+                </div>
                 <div className=" lg:text-lg flex flex-col gap-2">
-                    {project.text.map((tag, index) => (
+                    {project.text.map((text, index) => (
                         <p
                             key={index}
                         >
-                            {tag}
+                            {text}
                         </p>
                     ))}
                 </div>
@@ -50,24 +59,37 @@ const ProjectPage = () => {
                     </Button>}
 
                 </div>
-                <div className=" flex gap-2 flex-wrap">
-                    {project.tags.map((tag, index) => (
-                        <Tag
-                            key={index}
-                            title={tag}
-                        />
-                    ))}
-                </div>
             </div>
             <div className="w-1/2">
-                <Image
-                    src={project.image[0]}
-                    width={0}
-                    height={0}
-                    alt={project.title}
-                    sizes="100vw"
-                    className="w-full object-contain max-h-screen"
-                />
+
+                <Carousel className="flex items-center w-11/12 lg:w-11/12 h-full">
+                    <CarouselContent>
+                        {project.image.map((image, index) => (
+                            <CarouselItem className="flex items-center" key={index}>
+                                <Image
+                                    src={image}
+                                    width={0}
+                                    height={0}
+                                    alt={"Project Image"}
+                                    sizes="100vw"
+                                    className="w-full object-contain max-h-screen"
+                                />
+                            </CarouselItem>
+
+                        ))}
+
+                        <CarouselItem className="flex items-center">
+                            <iframe
+                                src={project.video[0]}
+                                frameBorder="0"
+                                allowFullScreen
+                                className="w-full aspect-video my-auto"
+                            />
+                        </CarouselItem>
+                    </CarouselContent>
+                    <CarouselPrevious />
+                    <CarouselNext />
+                </Carousel>
 
             </div>
         </div>

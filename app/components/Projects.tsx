@@ -27,7 +27,6 @@ export default function Projects() {
                                         title={project.title}
                                         text={project.resume}
                                         image={project.image}
-                                        link={project.link}
                                         tags={project.tags}
                                     />
                                 </CarouselItem>

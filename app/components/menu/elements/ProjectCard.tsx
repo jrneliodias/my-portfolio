@@ -6,7 +6,6 @@ type ProjectCardProps = {
     title: string
     text: string
     image: string[]
-    link: string[]
     tags: string[]
 }
 
@@ -14,7 +13,6 @@ const ProjectCard = ({
     title,
     text,
     image,
-    link,
     tags
 }: ProjectCardProps) => {
 
@@ -33,7 +31,7 @@ const ProjectCard = ({
                 <CardTitle>{title}</CardTitle>
             </CardHeader>
             <CardContent>
-                <p>{text}</p>
+                <p className="">{text}</p>
             </CardContent>
             <CardFooter>
                 <div className="flex flex-wrap gap-2">
