@@ -11,12 +11,12 @@ projectData
 export default function Projects() {
     return (
 
-        <section id="Projects" className="flex flex-col justify-evenly gap-4  items-center bg-slate-700 min-h-screen text-white">
+        <section id="Projects" className="flex flex-col justify-evenly gap-4 py-12 items-center bg-slate-700 min-h-screen text-white">
 
-            <h1 className="font-bold text-4xl uppercase p-10">Projects</h1>
+            <h1 className="font-bold text-4xl uppercase pt-10">Projects</h1>
             <div className="flex flex-1 items-center justify-evenly h-11/12 overflow-x-auto gap-4 w-full lg:w-full [&::-webkit-scrollbar]:hidden">
-                <Carousel className="flex items-center w-full  lg:w-11/12 h-full">
-                    <CarouselContent className="px-5">
+                <Carousel className="flex items-center w-full lg:w-11/12 h-11/12">
+                    <CarouselContent className="px-5 py-4">
                         {projectData.map((project, index) => (
                             <Link key={index} href={`projects/${index}`}>
                                 <CarouselItem className="basis-1/2 lg:basis-1/3">

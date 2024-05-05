@@ -1,7 +1,7 @@
 const Summary = () => {
     return (<>
 
-        <p className="text-4xl text-center lg:text-left mb-8 font-bold">
+        <p className="text-4xl text-center lg:text-left mb-8 font-bold uppercase">
             About me
         </p>
         <article className="text-md lg:text-xl" itemScope itemType="https://schema.org/author">
