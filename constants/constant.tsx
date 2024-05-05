@@ -57,7 +57,7 @@ export const projectData = [
     },
     {
         title: "LABVCON v2.0",
-        image: ["/interface_gpc.png", "/labvconv2.png"],
+        image: ["/labvconv2-1.png", "/labvconv2-2.png"],
         link: ["https://github.com/jrneliodias/tcc-labvcon-python"],
         video: ["https://www.youtube.com/embed/BrZvD8XTm4Y?si=a--Qdn2FS0wERt65"],
         resume: "LABVCON v2.0 é uma interface de controle de protótipos de sistemas dinâmicos implementados em Arduino em tempo real. Com ela se pode implementar os controladores PID, IMC (Internal Model Control), GMV (Generalized Minimum Variance) e GPC (Generalized Predictive Control) em sistemas SISO (Single Input Single Output).",
