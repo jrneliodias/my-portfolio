@@ -15,7 +15,7 @@ export default function Projects() {
 
         <section id="Projects" className="flex flex-col justify-evenly gap-4  items-center p-4 bg-slate-700 h-screen text-white min-w-full">
 
-            <p className="font-bold text-4xl uppercase">Projects</p>
+            <h1 className="font-bold text-4xl uppercase">Projects</h1>
             <div className="flex items-center justify-evenly h-5/6 p-2 overflow-x-auto gap-4 w-full lg:w-full [&::-webkit-scrollbar]:hidden">
                 <Carousel className="flex items-center w-11/12 lg:w-11/12 h-full">
                     <CarouselContent>
