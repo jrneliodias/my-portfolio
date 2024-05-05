@@ -1,4 +1,5 @@
 import { Github, Linkedin } from "lucide-react"
+import Image from "next/image";
 import Link from "next/link"
 
 const SocialMedia = ({ size }: { size: number }) => {
@@ -19,6 +20,13 @@ const SocialMedia = ({ size }: { size: number }) => {
 
             >
                 <Github size={size} />
+            </Link>
+            <Link
+                className={"bg-black bg-opacity-50 p-4 rounded-full transition-all hover:scale-110 scale-100"}
+                href="https://api.whatsapp.com/send?phone=5591989079292"
+
+            >
+                <Image src={"/whatsapp-icon.svg"} height={30} width={30} alt="whatsapp" />
             </Link>
         </div>
     )
