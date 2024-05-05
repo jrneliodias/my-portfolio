@@ -5,13 +5,13 @@ import Image from "next/image";
 export default function Services() {
     return (
 
-        <section id="Services" className="flex flex-col items-center px-20 bg-gray-900 min-h-screen text-white p-10">
+        <section id="Services" className="flex flex-col items-center  bg-gray-900 min-h-screen text-white py-10">
             <div className="flex flex-col gap-5 justify-start items-center w-full lg:gap-10 flex-1 ">
                 <h1 className="font-bold text-4xl uppercase">Services</h1>
-                <div className="flex h-full gap-4">
+                <div className="flex flex-col lg:flex-row w-11/12 h-full gap-4">
                     <Card className="flex-1 hover:bg-slate-700/80 bg-slate-700  text-white">
                         <div className="flex-1">
-                            <Image src={"/website-program-svgrepo-com.svg"} height={0} width={0} alt="whatsapp" className="h-auto w-11/12 p-6 mx-auto " />
+                            <Image src={"/website-program-svgrepo-com.svg"} height={0} width={0} alt="whatsapp" className="h-auto w-5/6 lg:w-11/12 p-6 mx-auto " />
                         </div>
                         <CardHeader>
                             <CardTitle className="">
@@ -24,7 +24,7 @@ export default function Services() {
                     </Card>
                     <Card className="flex-1 hover:bg-slate-700/80 bg-slate-700 flex flex-col justify-between text-white">
 
-                        <Image src={"/platform-program-svgrepo-com.svg"} height={0} width={0} alt="whatsapp" className=" w-11/12  p-6 mx-auto fill-white" />
+                        <Image src={"/platform-program-svgrepo-com.svg"} height={0} width={0} alt="whatsapp" className=" w-5/6 lg:w-11/12  p-6 mx-auto fill-white" />
                         <CardHeader>
                             <CardTitle>
                                 Construção de API
@@ -36,7 +36,7 @@ export default function Services() {
                     </Card>
                     <Card className="flex-1 hover:bg-slate-700/80 bg-slate-700 text-white">
 
-                        <Image src={"/database-svgrepo-com.svg"} height={0} width={0} alt="whatsapp" className="h-auto w-11/12  p-6 mx-auto" />
+                        <Image src={"/database-svgrepo-com.svg"} height={0} width={0} alt="whatsapp" className="h-auto w-5/6 lg:w-11/12  p-6 mx-auto" />
                         <CardHeader>
                             <CardTitle>
                                 Banco de dados

@@ -13,15 +13,15 @@ projectData
 export default function Projects() {
     return (
 
-        <section id="Projects" className="flex flex-col justify-evenly gap-4  items-center p-4 bg-slate-700 h-screen text-white min-w-full">
+        <section id="Projects" className="flex flex-col justify-evenly gap-4  items-center bg-slate-700 min-h-screen text-white">
 
-            <h1 className="font-bold text-4xl uppercase">Projects</h1>
-            <div className="flex items-center justify-evenly h-5/6 p-2 overflow-x-auto gap-4 w-full lg:w-full [&::-webkit-scrollbar]:hidden">
-                <Carousel className="flex items-center w-11/12 lg:w-11/12 h-full">
-                    <CarouselContent>
+            <h1 className="font-bold text-4xl uppercase p-10">Projects</h1>
+            <div className="flex flex-1 items-center justify-evenly h-11/12 overflow-x-auto gap-4 w-full lg:w-full [&::-webkit-scrollbar]:hidden">
+                <Carousel className="flex items-center w-full  lg:w-11/12 h-full">
+                    <CarouselContent className="px-5">
                         {projectData.map((project, index) => (
                             <Link key={index} href={`projects/${index}`}>
-                                <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                                <CarouselItem className="basis-1/2 lg:basis-1/3">
                                     <ProjectCard
                                         key={index}
                                         title={project.title}
@@ -34,8 +34,7 @@ export default function Projects() {
 
                         ))}
                     </CarouselContent>
-                    <CarouselPrevious />
-                    <CarouselNext />
+
                 </Carousel>
             </div>
 

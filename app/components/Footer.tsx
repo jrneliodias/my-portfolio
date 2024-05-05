@@ -1,4 +1,4 @@
-import SocialMedia from "@/static/SocialMedia";
+import SocialMedia from "@/app/static/SocialMedia";
 
 export default function Footer() {
     return (
