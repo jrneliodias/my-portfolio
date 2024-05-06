@@ -14,9 +14,9 @@ export default function Projects() {
         <section id="Projects" className="flex flex-col justify-evenly gap-4 py-12 items-center bg-slate-700 min-h-screen text-white">
 
             <h1 className="font-bold text-4xl uppercase pt-10">Projects</h1>
-            <div className="flex flex-1 items-center justify-evenly h-11/12 overflow-x-auto gap-4 w-full lg:w-full [&::-webkit-scrollbar]:hidden">
-                <Carousel className="flex items-center w-full lg:w-11/12 h-11/12">
-                    <CarouselContent className="px-5 py-4">
+            <div className="flex flex-1 items-center h-11/12 overflow-x-auto gap-4 w-full lg:w-full [&::-webkit-scrollbar]:hidden">
+                <Carousel className="flex items-center w-full lg:w-full h-11/12">
+                    <CarouselContent className="px-5 lg:px-20 py-4 w-full">
                         {projectData.map((project, index) => (
                             <Link key={index} href={`projects/${index}`}>
                                 <CarouselItem className="basis-1/2 lg:basis-1/3">

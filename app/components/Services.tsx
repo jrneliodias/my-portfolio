@@ -5,7 +5,7 @@ export default function Services() {
     return (
 
         <section id="Services" className="flex flex-col items-center  bg-gray-900 min-h-screen text-white py-16">
-            <div className="flex flex-col gap-5 justify-start items-center w-full lg:gap-10 flex-1 ">
+            <div className="flex flex-col gap-5 justify-start items-center w-5/6 lg:gap-10 flex-1 ">
                 <h1 className="font-bold text-4xl uppercase">Services</h1>
                 <div className="flex flex-col lg:flex-row w-11/12 h-full gap-4">
                     <Card className="flex-1 hover:bg-slate-700/80 bg-slate-700  text-white">

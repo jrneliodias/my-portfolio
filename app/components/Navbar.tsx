@@ -42,7 +42,7 @@ export default function Navbar() {
 
                     <Sheet open={isOpen} onOpenChange={setIsOpen}>
                         <SheetContent className="flex flex-col  justify-between pt-12 bg-slate-700 text-white ">
-                            <div className="flex flex-col">
+                            <div className="flex flex-col gap-4">
                                 <Button
                                     variant={'ghost'}
                                     className="justify-start"
@@ -67,7 +67,7 @@ export default function Navbar() {
                                 </Button>
                             </div>
 
-                            <SocialMedia size={30} />
+                            <SocialMedia size={20} />
 
                         </SheetContent>
                     </Sheet>
