@@ -65,17 +65,17 @@ const ProjectPage = () => {
                         </div>
                     </div>
                     <div className="lg:w-3/4 p-2">
-                        <Carousel className="w-full h-full flex flex-col">
+                        <Carousel className="w-full flex h-5/6 flex-col">
                             <CarouselContent>
                                 {project.image.map((image, index) => (
-                                    <CarouselItem className="flex items-center lg:items-start" key={index}>
+                                    <CarouselItem className="flex items-center  lg:items-start" key={index}>
                                         <Image
                                             src={image}
                                             width={0}
                                             height={0}
                                             alt={"Project Image"}
                                             sizes="100vw"
-                                            className="w-full object-contain max-h-screen rounded-md"
+                                            className="w-full rounded-md"
                                         />
                                     </CarouselItem>
 
