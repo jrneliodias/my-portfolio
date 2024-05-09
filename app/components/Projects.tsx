@@ -18,17 +18,16 @@ export default function Projects() {
                 <Carousel className="flex items-center w-full lg:w-full h-11/12">
                     <CarouselContent className="px-5 lg:px-20 py-4 w-full">
                         {projectData.map((project, index) => (
-                            <Link key={index} href={`projects/${index}`}>
-                                <CarouselItem className="basis-1/2 lg:basis-1/3">
+                            <CarouselItem key={index} className="md:basis-1/2 xl:basis-1/3">
+                                <Link href={`projects/${index}`}>
                                     <ProjectCard
-                                        key={index}
                                         title={project.title}
                                         text={project.resume}
                                         image={project.image}
                                         tags={project.tags}
                                     />
-                                </CarouselItem>
-                            </Link>
+                                </Link>
+                            </CarouselItem>
 
                         ))}
                     </CarouselContent>

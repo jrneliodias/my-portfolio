@@ -3,14 +3,14 @@ export const timelineData = [
     {
         title: "Fullstack Developer",
         company: "Freelancing",
-        tasks: ["Building modern web applications with API integration such as landing pages and dashboards"],
-        tags: ["Next.Js", "React.Js", "Typescript", "REST API", "Hostiger"],
+        tasks: [" Construção de aplicações web modernas com integrações de APIS, como landing pages e dashboards.", "Desenvolvimento de APIs para integrar sistemas de gestão de equipes, como o sistema de gestão de equipes de vendas."],
+        tags: ["Next.Js", "React.Js", "Typescript", "REST API", "Hostiger", "Postgres SQL", "Node Js"],
         year: "2024"
     },
     {
         title: "Full Stack Developer",
         company: "UFPA",
-        tasks: ["Objetivo do Projeto: Desenvolvimento de um web aplicativo para o ensino e aprendizagem de português para refugiados venezuelanos, com ênfase no dialeto paraense.", "Funcionalidades da Plataforma: Sistema de login. Exercícios de leitura. Exercícios de áudio. Exercícios de escrita.", "Tecnologias Utilizadas no Front-end: Next Js, React JS, Tailwind CSS, Ant Design, Typescript.", " Tecnologias Utilizadas no Back-end: Node.js, Cadastro de usuários, Autenticação com o Next Auth, Banco de dados utilizando PostgreSQL, Prisma ORM, Supabase.", "Aplicação de metodologias Agéis, CI/CD, trabalho em equipe com o grupo de UX para melhorias contínuas."],
+        tasks: ["Função: Desenvolvimento, integração e manutenção de um web aplicativo para o ensino e aprendizagem de português para refugiados venezuelanos, com ênfase no dialeto paraense.", "Funcionalidades da Plataforma: Sistema de login. Monitoramento do progresso do aluno, exercícios de leitura, áudio e escrita interativo e gameficados.", "Tecnologias Utilizadas no Front-end: Next Js, React JS, Tailwind CSS, Ant Design, Typescript.", " Tecnologias Utilizadas no Back-end: Node.js, Cadastro de usuários, Autenticação com o Next Auth, Banco de dados utilizando PostgreSQL, Prisma ORM, Supabase.", "Aplicação de metodologias Agéis, CI/CD, trabalho em equipe com o grupo de UX para melhorias contínuas."],
         tags: ["Node.js", "Next.js", "Typescript", "Prisma ORM", "Postgres SQL", "Tailwind CSS", "REST API", "Next Auth", "Supabase", "CI/CD"],
         year: "2023"
     },
@@ -25,7 +25,7 @@ export const projectData = [
         video: ["https://www.youtube.com/embed/D_McBEfwxJY?si=5xPyMtiC87neRHH8"],
         resume: "Lingo é um projeto que cria uma plataforma de aprendizado de idiomas de forma gameficada semelhante o Duolingo. O objetivo do projeto é construir um sistema robusto e escalável para múltiplas linguagens, controle de usuários e pontuações.",
         text: [
-            "Lingo é um projeto que cria uma plataforma de aprendizado de idiomas de forma gameficada semelhante o Duolingo. O objetivo do projeto é construir um sistema robusto e escalável para múltiplas linguagens, controle de usuários e pontuações. Além disso, é uma oportunidade de aplicar o Project Based Learning (PBL), ou seja me atualizar e aprofundar meus conhecimentos na integrações de tecnologias com um desenvolvimento de um projeto open-source. Claro que isso foi possível pelo trabalho espetacular do Antonio do Code With Antonio que criou esse curso maravilhoso gratuito. Recomendadissímo os cursos dele.",
+            "Lingo é um projeto de uma plataforma de aprendizado de idiomas de forma gameficada semelhante o Duolingo. O objetivo do projeto é construir um sistema robusto e escalável para múltiplas linguagens, controle de usuários e pontuações. Além disso, é uma oportunidade de aplicar o Project Based Learning (PBL), ou seja me atualizar e aprofundar meus conhecimentos na integrações de tecnologias com um desenvolvimento de um projeto open-source. Claro que isso foi possível pelo trabalho espetacular do Antonio do Code With Antonio que criou esse curso maravilhoso gratuito. Recomendadissímo os cursos dele.",
             "Então mesmo que seja algo pronto e passo a passo, tem seu valor aprender com projetos reais, visto que você precisa acompanhar o racíocionio de outra pessoa para chegar no objetivo, é um curso longo, vai aparecer erros que não apaprece no código dele e sempre deixamos passar algo. Além disso, você aprende novas sacadas e soluções para problemas cotidianos na vida de um Dev.",
         ],
         tags: ["Next Js 14", "React.Js", "Typescript", "Shadcn Ui", "Drizzle ORM", "Stripe", "Zustend", "Clerk", "Eleven Labs", "Postgres SQL", "REST API", "Serve Actions", "Vercel Deploy"],
@@ -35,7 +35,7 @@ export const projectData = [
         image: ["/detect-objects-schema.png"],
         link: ["https://github.com/jrneliodias/detect-object-interface"],
         video: ["https://www.youtube.com/embed/BLGKxnFnMqo?si=JGmcAzIXM4BivgTt"],
-        resume: "Desenvolvimento do frontend, backend e banco de dados de um sistema de detecção de objetos em videos utilizando IA e Open CV",
+        resume: "Desenvolvimento do frontend, backend e banco de dados Postgres de uma interface para detecção de objetos em videos utilizando React, Python, Flask, IA YOLOv8 e Open CV. O usuário pode inserir um video que deseja detectar, configurar o modelo YOLO e receber o resultado em video na mesma interface com as detecções em tabela",
         text: [
             "Objetivo: Construir a interface  intuitiva de comunicação do usuário, o servidor para o processamento do video e o banco de dados para armazenar os resultados. Desse modo, o usuário envia seu video para o servidor pela interface e, após o processamento é devolvido para o navegador.",
             "Experiências com o projeto: Adquiri experiência ao trabalhar com um projeto com 3 servidores independentes. Desenvolvi toda estrutura do frontend, backend e banco de dados. Obtive experiência na construção de API utilizando Flask e Python e na utilização do modelo YOLOv8 e Open CV.",

@@ -9,7 +9,7 @@ export default function About() {
                     <div className="flex w-full p-5 lg:w-1/2 flex-col ">
                         <Summary />
                     </div>
-                    <div className="flex justify-center w-5/6 lg:w-1/2 lg:flex flex-col ">
+                    <div className="flex justify-center w-full px-5 lg:p-0 lg:w-1/2 lg:flex flex-col ">
                         <Timeline />
                     </div>
                 </div>

@@ -68,7 +68,7 @@ const ProjectPage = () => {
                         <Carousel className="w-full lg:w-5/6 flex flex-col">
                             <CarouselContent>
                                 {project.image.map((image, index) => (
-                                    <CarouselItem className="flex items-center  lg:items-start" key={index}>
+                                    <CarouselItem className="flex items-center  lg:items-start min-h-max" key={index}>
                                         <Image
                                             src={image}
                                             width={0}
