@@ -8,11 +8,45 @@ import { Github, Rocket } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { useParams } from "next/navigation"
-
+import Markdown from "../components/markdown"
+import { useState } from "react"
+import {
+    Dialog,
+    DialogContent,
+    DialogDescription,
+    DialogHeader,
+    DialogTitle,
+    DialogTrigger,
+} from "@/components/ui/dialog"
+interface ProjectPageProps {
+    projectData: {
+        title: string;
+        image: string[];
+        link: string[];
+        video: string[];
+        resume: string;
+        text: ({
+            p?: string;
+            h2?: string;
+            ul?: string[];
+        })[];
+        tags: string[];
+    }[]
+}
 const ProjectPage = () => {
+    const [isOpen, setIsOpen] = useState<boolean>(false)
     const { projectId } = useParams()
     const projectIdInt = parseInt(projectId[0])
     const project = projectData[projectIdInt]
+
+    const [carrouselImage, setCarrouselImage] = useState<string>(project.image[0])
+    const handleImageClick = (srcImage: string) => {
+        setIsOpen(true)
+        setCarrouselImage(srcImage)
+
+
+    }
+
 
     return (
         <div className="w-full  min-h-screen px-5 py-20 flex flex-col lg:flex-row items-center justify-center gap-10 bg-slate-800 text-white">
@@ -28,16 +62,8 @@ const ProjectPage = () => {
                     ))}
                 </div>
                 <div className="flex flex-col-reverse gap-10 lg:flex-row ">
-                    <div className="flex flex-col-reverse lg:flex-col lg:w-1/2 gap-10">
-                        <div className=" lg:text-lg flex flex-col gap-2">
-                            {project.text.map((text, index) => (
-                                <p
-                                    key={index}
-                                >
-                                    {text}
-                                </p>
-                            ))}
-                        </div>
+                    <div className="flex flex-col  lg:w-1/2 gap-10">
+
 
                         <div className="flex items-center gap-5">
 
@@ -63,25 +89,42 @@ const ProjectPage = () => {
                             </Button>}
 
                         </div>
+                        <div className=" lg:text-lg flex flex-col gap-2">
+                            <Markdown text={project.text} />
+                        </div>
                     </div>
                     <div className="lg:w-3/4 p-2">
-                        <Carousel className="w-full lg:w-5/6 flex flex-col">
+                        <Carousel className="w-full flex flex-col">
                             <CarouselContent>
                                 {project.image.map((image, index) => (
-                                    <CarouselItem className="flex items-center  lg:items-start min-h-max" key={index}>
-                                        <Image
-                                            src={image}
-                                            width={0}
-                                            height={0}
-                                            alt={"Project Image"}
-                                            sizes="100vw"
-                                            className="w-full rounded-md"
-                                        />
-                                    </CarouselItem>
+                                    <>
+                                        <CarouselItem onClick={() => handleImageClick(image)} className="flex items-center min-h-max" key={index}>
+                                            <Image
+                                                src={image}
+                                                width={0}
+                                                height={0}
+                                                alt={"Project Image"}
+                                                sizes="100vw"
+                                                className="w-full rounded-md"
+                                            />
+                                        </CarouselItem>
+                                        <Dialog open={isOpen} onOpenChange={setIsOpen}>
 
+                                            <DialogContent className="w-11/12 h-[90%] flex justify-center items-center">
+                                                <Image
+                                                    src={carrouselImage}
+                                                    width={0}
+                                                    height={0}
+                                                    alt={"Project Image"}
+                                                    sizes="100vw"
+                                                    className="h-full w-auto rounded-md"
+                                                />
+                                            </DialogContent>
+                                        </Dialog>
+                                    </>
                                 ))}
                                 {project.video[0] &&
-                                    (<CarouselItem className="flex my-auto lg:my-0 lg:items-start">
+                                    (<CarouselItem className="flex my-auto lg:my-0 lg:items-center">
                                         <iframe
                                             src={project.video[0]}
                                             frameBorder="0"
