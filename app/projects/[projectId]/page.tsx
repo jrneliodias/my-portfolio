@@ -106,14 +106,14 @@ const ProjectPage = () => {
                                         </CarouselItem>
                                         <Dialog open={isOpen} onOpenChange={setIsOpen}>
 
-                                            <DialogContent className="w-11/12 h-[90%] flex justify-center items-center">
+                                            <DialogContent className="  md:w-5/6 flex md:h-[90vh] justify-center items-center">
                                                 <Image
                                                     src={carrouselImage}
                                                     width={0}
                                                     height={0}
                                                     alt={"Project Image"}
                                                     sizes="100vw"
-                                                    className="h-full w-auto rounded-md"
+                                                    className="w-full md:w-fit md:h-full  rounded-md"
                                                 />
                                             </DialogContent>
                                         </Dialog>
