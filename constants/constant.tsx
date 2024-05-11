@@ -32,6 +32,33 @@ export const timelineData = [
 
 export const projectData: ProjectData = [
     {
+        title: "FSW FOODS",
+        image: ["/fsw-foods-0.png", "/fsw-foods-1.png", "/fsw-foods-2.png", "/fsw-foods-3.png", "/fsw-foods-4.png", "/fsw-foods-5.png", "/fsw-foods-6.png", "/fsw-foods-7.png", "/fsw-foods-8.png"],
+        link: ["https://github.com/jrneliodias/fsw-foods", "https://nelio-fsw-foods.vercel.app/"],
+        video: ["https://www.youtube.com/embed/MI4Cvqn_TCg?si=awukChlFi3omtevO"],
+        resume: "FSW foods é um projeto Full Stack com todo o desenvolvimento de um e-commmerce de restaurantes estilo Ifood com o catalogo dos produtos, dos restaurantes, com login do usuário e carrinho de compra e pagamento.",
+        text: [
+            { p: "FSW foods é um projeto Full Stack com todo o desenvolvimento de um e-commmerce de restaurantes estilo Ifood com o catalogo dos produtos, dos restaurantes, com login do usuário e carrinho de compra e pagamento para sua loja. O diferencial é o total controle sobre os componentes da loja e o sistema de pagamento. Podendo expandi-lo com novas funcionalidades." },
+            { p: "Então mesmo que seja algo pronto e passo a passo, tem seu valor aprender com projetos reais, visto que você precisa acompanhar o racíocionio de outra pessoa para chegar no objetivo, é um curso longo, vai aparecer erros que não apaprece no código dele e sempre deixamos passar algo. Além disso, você aprende novas sacadas e soluções para problemas cotidianos na vida de um Dev." },
+            { h2: "Fetures do sistema:" },
+            {
+                ul: [
+                    "Layout tanto para desktop quanto para mobile",
+                    "O usuário pode buscar o restaurante na barra de pesquisa",
+                    "O carrinho possui todas as funções necessárias pra calcular a ordem do usuário junto com a  quantidade e o preço utilizando context API.",
+                    "Cada usuário pode criar uma lista de restaurantes favoritos",
+                    "Cada usuário possui um gerenciador de pedidos onde pode consultar todos os pedidos e até refazê-los."]
+            },
+            { h2: "Melhorias feitas por mim:" },
+            {
+                ul: ["Além do projeto feito durante o evento, inseri a responsividade do site para as versões desktop e tablet com o Figma do projeto fornecido, adicionei o sistema de avaliação do restaurante no banco de dados e nas queries dos restaurantes para renderizar os componentes. "]
+            }
+
+
+        ],
+        tags: ["Next Js 14", "React.Js", "Typescript", "Shadcn Ui", "Prisma ORM", "Stripe", "Context API", "Next Auth", "Postgres SQL", "REST API", "Serve Actions", "Vercel Deploy", "Neon Database"],
+    },
+    {
         title: "PROJETO LINGO",
         image: ["/lingo-project-1.png", "/lingo-project-2.png", "/lingo-project-3.png"],
         link: ["https://github.com/jrneliodias/lingo-project", "https://lingo-project.vercel.app"],
@@ -66,9 +93,14 @@ export const projectData: ProjectData = [
         text: [
             {
 
-                p: "O sistema é divido em três áreas distintas: Frontend, Backend e banco de dados, cada uma desempenhando um papel fundamental no funcionamento do projeto. Vamos dar uma olhada nas tecnologias que utilizamos em cada uma delas:"
+                p: "Esse projeto é o desenvolvimento de uma interface para o usuário detectar objetos e pessoas dentro de um video utilizando inteligência artificial utilizando o modelo Yolo v8. Na interface o usuário pode configurar os principais parâmetros do modelo, obter o video com as detecções e receber os resultados em uma tabela. Veja o video no final para mais informações."
             },
             {
+
+                p: "Na segunda figura, temos o esquema do fluxo de informações do app. O sistema é divido em três áreas distintas: Frontend, Backend e banco de dados, cada uma desempenhando um papel fundamental no funcionamento do projeto. Vamos dar uma olhada nas tecnologias que utilizamos em cada uma delas:"
+            },
+            {
+                h2: "Tecnologias da interface da interface do usuário:",
                 p: "No frontend, optei por:",
                 ul: ["React com Vite para uma experiência de desenvolvimento ágil.",
                     "Typescript para um código mais robusto e seguro.",
@@ -77,6 +109,7 @@ export const projectData: ProjectData = [
                     "ViTest para testes automatizados e garantia de qualidade."]
             },
             {
+                h2: "Tecnologias do servidor:",
                 p: "Para o Backend, escolhi:",
                 ul: ["React com Vite para uma experiência de desenvolvimento ágil.",
                     "Python como linguagem principal devido à sua versatilidade e poder.",
@@ -87,9 +120,10 @@ export const projectData: ProjectData = [
                     "E, é claro, YOLOv8 para a detecção de objetos com precisão e rapidez."]
             },
             {
+                h2: "Tecnologias do banco de dados:",
                 p: "No banco de dados, utilizamos:",
-                ul: ["✅ Docker para criar ambientes isolados e facilitar a implantação.",
-                    "✅ Postgres SQL para armazenar e gerenciar os dados de forma eficiente e confiável.",
+                ul: ["Docker para criar ambientes isolados e facilitar a implantação.",
+                    "Postgres SQL para armazenar e gerenciar os dados de forma eficiente e confiável.",
                 ]
             },
             {

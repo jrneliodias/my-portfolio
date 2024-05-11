@@ -94,14 +94,14 @@ const ProjectPage = () => {
                             <CarouselContent>
                                 {project.image.map((image, index) => (
                                     <>
-                                        <CarouselItem onClick={() => handleImageClick(image)} className="flex items-center min-h-max" key={index}>
+                                        <CarouselItem onClick={() => handleImageClick(image)} className="flex items-center h-[calc(100vh-280px)] justify-center" key={index}>
                                             <Image
                                                 src={image}
                                                 width={0}
                                                 height={0}
                                                 alt={"Project Image"}
                                                 sizes="100vw"
-                                                className="w-full rounded-md"
+                                                className="h-auto w-auto max-h-full rounded-md"
                                             />
                                         </CarouselItem>
                                         <Dialog open={isOpen} onOpenChange={setIsOpen}>
