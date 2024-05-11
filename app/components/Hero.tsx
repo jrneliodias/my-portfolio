@@ -16,14 +16,13 @@ export default function Hero() {
                     </div>
                 </div>
 
-                <Image className="w-3/5 sm:w-2/5 lg:w-2/5 max-w-lg object-contain self-center animate-scalepulse rounded-xl
-                bg-blend-multiply	
-                "
+                <Image
+                    className="w-3/5 sm:w-2/5 max-h-[700px] object-cover animate-scalepulse rounded-xl "
                     width={0}
                     height={0}
-                    alt="portrait"
+                    alt="dev-image"
                     sizes="100vw"
-                    src="/web-programmer.png" />
+                    src="/pixel-art-photo.png" />
 
             </div>
         </section>
