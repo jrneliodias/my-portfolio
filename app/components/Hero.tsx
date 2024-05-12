@@ -15,15 +15,17 @@ export default function Hero() {
                         <SocialMedia size={30} />
                     </div>
                 </div>
+                <div className="relative  w-[20rem] h-[30rem] md:w-[30rem] lg:min-h-[calc(100vh-20rem)] rounded-xl bg-blue-500 ">
+                    <Image
+                        className="w-3/5 sm:w-2/5 max-h-[700px] object-cover animate-scalepulse rounded-xl grayscale mix-blend-hard-light"
 
-                <Image
-                    className="w-3/5 sm:w-2/5 max-h-[700px] object-cover animate-scalepulse rounded-xl "
-                    width={0}
-                    height={0}
-                    alt="dev-image"
-                    sizes="100vw"
-                    src="/pixel-art-photo.png" />
+                        fill
+                        alt="dev-image"
+                        sizes="100vw"
+                        src="/pixel-art-photo.png"
+                    />
 
+                </div>
             </div>
         </section>
 
