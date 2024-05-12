@@ -15,7 +15,7 @@ export default function Hero() {
                         <SocialMedia size={30} />
                     </div>
                 </div>
-                <div className="relative  w-[20rem] h-[30rem] md:w-[30rem] lg:min-h-[calc(100vh-20rem)] rounded-xl bg-blue-500 ">
+                <div className="relative  w-[20rem] h-[30rem] md:w-[30rem] lg:min-h-[calc(100vh-20rem)] rounded-xl bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 ">
                     <Image
                         className="w-3/5 sm:w-2/5 max-h-[700px] object-cover animate-scalepulse rounded-xl grayscale mix-blend-hard-light"
 
