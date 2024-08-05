@@ -68,17 +68,19 @@ const ProjectPage = () => {
                                 asChild
                                 className="flex gap-2 max-w-40"
                             >
-                                <Link href={project.link[0]}>
-                                    <Github />
-                                    Repositório
-                                </Link>
+                                {project.link?.repository &&
+                                    <Link href={project.link?.repository}>
+                                        <Github />
+                                        Repositório
+                                    </Link>}
+
                             </Button>
-                            {project.link[1] && <Button
+                            {project.link?.production && <Button
                                 variant={"secondary"}
                                 asChild
                                 className="flex gap-2 max-w-40 animate-pulse"
                             >
-                                <Link href={project.link[1]}>
+                                <Link href={project.link?.production}>
                                     <Rocket />
                                     Produção
                                 </Link>
@@ -119,7 +121,7 @@ const ProjectPage = () => {
                                         </Dialog>
                                     </>
                                 ))}
-                                {project.video[0] &&
+                                {project.video &&
                                     (<CarouselItem className="flex my-auto lg:my-0 lg:items-center">
                                         <iframe
                                             src={project.video[0]}
@@ -129,6 +131,7 @@ const ProjectPage = () => {
                                         />
                                     </CarouselItem>)
                                 }
+
                             </CarouselContent>
                             <div className="mt-6">
                                 <CarouselPrevious />

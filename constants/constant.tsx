@@ -1,8 +1,8 @@
 type ProjectData = {
     title: string;
     image: string[];
-    link: string[];
-    video: string[];
+    link: { repository?: string, production?: string };
+    video?: string[];
     resume: string;
     text: ({
         p?: string;
@@ -44,7 +44,7 @@ export const projectData: ProjectData = [
     {
         title: "PC DOS SONHOS",
         image: ["/pc-dos-sonhos-1.png", "/pc-dos-sonhos-2.png", "/pc-dos-sonhos-3.png", "/pc-dos-sonhos-4.png", "/pc-dos-sonhos-5.png", "/pc-dos-sonhos-6.png"],
-        link: ["", "https://pcdossonhos.com"],
+        link: { production: "https://pc-dos-sonhos.vercel.app/" },
         video: [""],
         resume: "Pc dos sonhos é uma plataforma de vendas de rifas com o propósito de sorteio de Pc gamers e consoles com mais de 16.000 usuários cadastrados e sistema de afiliados. Desenvolvi o dashboard administrativo para gerenciamento dos sorteios, usuários, afiliados. ",
         text: [
@@ -62,12 +62,15 @@ export const projectData: ProjectData = [
             },
 
         ],
-        tags: ["Next Js 14", "React.Js", "Typescript", "Shadcn Ui", "Prisma ORM", "Stripe", "Context API", "Next Auth", "Postgres SQL", "REST API", "Serve Actions", "Vercel Deploy", "Neon Database"],
+        tags: ["Next Js 14", "React.Js", "Tanstack Query", "Tailwind CSS", "Typescript", "Java", "Swagger", "Shadcn Ui", "Autenticação JWT", "Context API", "Postgres SQL", "REST API", "Redis", "Mercado Pago", "Spring Boot", "Docker", "Github Actions", "AWS", "Gitlab CI/CD", "Github Actions", "Gitlab CI/CD"],
     },
     {
         title: "FSW FOODS",
         image: ["/fsw-foods-0.png", "/fsw-foods-1.png", "/fsw-foods-2.png", "/fsw-foods-3.png", "/fsw-foods-4.png", "/fsw-foods-5.png", "/fsw-foods-6.png", "/fsw-foods-7.png", "/fsw-foods-8.png"],
-        link: ["https://github.com/jrneliodias/fsw-foods", "https://nelio-fsw-foods.vercel.app/"],
+        link: {
+            production: "https://fsw-foods.vercel.app/",
+            repository: "https://github.com/jrneliodias/fsw-foods"
+        },
         video: ["https://www.youtube.com/embed/MI4Cvqn_TCg?si=awukChlFi3omtevO"],
         resume: "FSW foods é um projeto Full Stack com todo o desenvolvimento de um e-commmerce de restaurantes estilo Ifood com o catalogo dos produtos, dos restaurantes, com login do usuário e carrinho de compra e pagamento.",
         text: [
@@ -94,7 +97,10 @@ export const projectData: ProjectData = [
     {
         title: "PROJETO LINGO",
         image: ["/lingo-project-1.png", "/lingo-project-2.png", "/lingo-project-3.png"],
-        link: ["https://github.com/jrneliodias/lingo-project", "https://lingo-project.vercel.app"],
+        link: {
+            repository: "https://github.com/jrneliodias/lingo-project",
+            production: "https://lingo-project.vercel.app"
+        },
         video: ["https://www.youtube.com/embed/D_McBEfwxJY?si=5xPyMtiC87neRHH8"],
         resume: "Lingo é um projeto que cria uma plataforma de aprendizado de idiomas de forma gameficada semelhante o Duolingo. O objetivo do projeto é construir um sistema robusto e escalável para múltiplas linguagens, controle de usuários e pontuações.",
         text: [
@@ -120,7 +126,9 @@ export const projectData: ProjectData = [
     {
         title: "VIDEO OBJECT DETECTIONS BY IA INTERFACE",
         image: ["/detect-object-interface.png", "/detect-objects-schema.png"],
-        link: ["https://github.com/jrneliodias/detect-object-interface"],
+        link: {
+            repository: "https://github.com/jrneliodias/detect-object-interface"
+        },
         video: ["https://www.youtube.com/embed/BLGKxnFnMqo?si=JGmcAzIXM4BivgTt"],
         resume: "Desenvolvimento do frontend, backend e banco de dados Postgres de uma interface para detecção de objetos em videos utilizando React, Python, Flask, IA YOLOv8 e Open CV. O usuário pode inserir um video que deseja detectar, configurar o modelo YOLO e receber o resultado em video na mesma interface com as detecções em tabela",
         text: [
@@ -144,13 +152,15 @@ export const projectData: ProjectData = [
             {
                 h2: "Tecnologias do servidor:",
                 p: "Para o Backend, escolhi:",
-                ul: ["React com Vite para uma experiência de desenvolvimento ágil.",
+                ul: [
+                    "React com Vite para uma experiência de desenvolvimento ágil.",
                     "Python como linguagem principal devido à sua versatilidade e poder.",
                     "Flask como framework web, oferecendo uma estrutura leve e flexível.",
                     "Pytest para testes unitários e de integração, garantindo a estabilidade do sistema.",
                     "Open CV para manipular os frames do video e desenhar a detecação do objeto",
                     "SQL Alchemy para a comunicação eficiente com o banco de dados e manipulação de dados.",
-                    "E, é claro, YOLOv8 para a detecção de objetos com precisão e rapidez."]
+                    "E, é claro, YOLOv8 para a detecção de objetos com precisão e rapidez."
+                ]
             },
             {
                 h2: "Tecnologias do banco de dados:",
@@ -172,7 +182,10 @@ export const projectData: ProjectData = [
     {
         title: "Modern Next Js To Do App",
         image: ["/nextjs_todo.png"],
-        link: ["https://github.com/jrneliodias/next-react-todo-app", "https://todo-list-app-nelio.vercel.app/"],
+        link: {
+            repository: "https://github.com/jrneliodias/next-react-todo-app",
+            production: "https://todo-list-app-nelio.vercel.app/"
+        },
         video: ["https://www.youtube.com/embed/QOixX-uKVP4?si=LkrFqwM3cpOyOkPv"],
         resume: "To Do App é um projeto clássico que visa criar experiência no front end com interfaces em React, utilizando múltiplos filtros com manipulação de estados, backend Node para o desenvolvimento de API, arquitetura REST para criar um CRUD, banco de dados hospedado na Vercel e aplicação de testes unitários com Jest.",
         text: [
@@ -201,7 +214,7 @@ export const projectData: ProjectData = [
     {
         title: "LABVCON v2.0",
         image: ["/labvconv2-1.png", "/labvconv2-2.png"],
-        link: ["https://github.com/jrneliodias/tcc-labvcon-python"],
+        link: { repository: "https://github.com/jrneliodias/tcc-labvcon-python" },
         video: ["https://www.youtube.com/embed/BrZvD8XTm4Y?si=a--Qdn2FS0wERt65"],
         resume: "LABVCON v2.0 é uma interface de controle de protótipos de sistemas dinâmicos implementados em Arduino em tempo real. Com ela se pode implementar os controladores PID, IMC (Internal Model Control), GMV (Generalized Minimum Variance) e GPC (Generalized Predictive Control) em sistemas SISO (Single Input Single Output).",
         text: [{
@@ -215,7 +228,7 @@ export const projectData: ProjectData = [
     {
         title: "LABVCON v1.0",
         image: ["/labvcon_website.png", "/Logo_LABVCON.png"],
-        link: ["https://github.com/jrneliodias/LABVCON", "https://jrneliodias.github.io/LABVCON/"],
+        link: { repository: "https://github.com/jrneliodias/LABVCON", production: "https://jrneliodias.github.io/LABVCON/" },
         video: [""],
         resume: "Esse projeto tem como objetivo desenvolver um software que simula um laboratório de engenharia de controle clássico para um usuário que não tenha acesso aos instrumentos básicos necessários. Nesse laboratório, o usuário poderá explorar as estrututuras clássicas de um controlador PID, explorar suas sintonias por tabela e simular essas configurações nas funções de transferências das plantas desejadas.",
         text: [
