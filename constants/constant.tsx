@@ -14,14 +14,24 @@ type ProjectData = {
 
 export const timelineData = [
     {
-        title: "Fullstack Developer",
+        title: "Desenvolvedor Fullstack ",
+        company: "Go Tech DS",
+        tasks: [
+            "Desenvolvimento de uma plataforma de vendas de rifas com 16.000 usuários cadastrados, integração de API Java, gateway de pagamento do Mercado Pago e dashboard administrativo para gerenciamento dos sorteios, usuários e afiliados. Em conjunto com a equipo composta de 10 desenvolvedores.",
+            "Criação de um dashboard financeiro para gerenciamento de empréstimos e cadastro de uma Fintech Financeira com 2.000 usuários cadastrados."
+        ],
+        tags: ["Next.Js", "React.Js", "Typescript", "REST API", "Spring Boot", "Postgres SQL", "Node Js", "Docker", "Redis", "Tailwind Css", "AWS", "Amplify"],
+        year: "2024"
+    },
+    {
+        title: "Desenvolvedor Fullstack",
         company: "Freelancing",
         tasks: [" Construção de aplicações web modernas com integrações de APIS, como landing pages e dashboards.", "Desenvolvimento de APIs para integrar sistemas de gestão de equipes, como o sistema de gestão de equipes de vendas."],
         tags: ["Next.Js", "React.Js", "Typescript", "REST API", "Hostiger", "Postgres SQL", "Node Js"],
         year: "2024"
     },
     {
-        title: "Full Stack Developer",
+        title: "Desenvolvedor Fullstack",
         company: "UFPA",
         tasks: ["Função: Desenvolvimento, integração e manutenção de um web aplicativo para o ensino e aprendizagem de português para refugiados venezuelanos, com ênfase no dialeto paraense.", "Funcionalidades da Plataforma: Sistema de login. Monitoramento do progresso do aluno, exercícios de leitura, áudio e escrita interativo e gameficados.", "Tecnologias Utilizadas no Front-end: Next Js, React JS, Tailwind CSS, Ant Design, Typescript.", " Tecnologias Utilizadas no Back-end: Node.js, Cadastro de usuários, Autenticação com o Next Auth, Banco de dados utilizando PostgreSQL, Prisma ORM, Supabase.", "Aplicação de metodologias Agéis, CI/CD, trabalho em equipe com o grupo de UX para melhorias contínuas."],
         tags: ["Node.js", "Next.js", "Typescript", "Prisma ORM", "Postgres SQL", "Tailwind CSS", "REST API", "Next Auth", "Supabase", "CI/CD"],
@@ -31,6 +41,29 @@ export const timelineData = [
 ]
 
 export const projectData: ProjectData = [
+    {
+        title: "PC DOS SONHOS",
+        image: ["/pc-dos-sonhos-1.png", "/pc-dos-sonhos-2.png", "/pc-dos-sonhos-3.png", "/pc-dos-sonhos-4.png", "/pc-dos-sonhos-5.png", "/pc-dos-sonhos-6.png"],
+        link: ["", "https://pcdossonhos.com"],
+        video: [""],
+        resume: "Pc dos sonhos é uma plataforma de vendas de rifas com o propósito de sorteio de Pc gamers e consoles com mais de 16.000 usuários cadastrados e sistema de afiliados. Desenvolvi o dashboard administrativo para gerenciamento dos sorteios, usuários, afiliados. ",
+        text: [
+            { p: "Pc dos sonhos é uma plataforma de vendas de rifas com o propósito do sorteio de Pc gamers e consoles com mais de 16.000 usuários cadastrados e sistema de afiliados. Desenvolvi o dashboard administrativo para gerenciamento dos sorteios, usuários, afiliados." },
+            { h2: "Fetures do sistema:" },
+            {
+                ul: [
+                    "Layout tanto para desktop quanto para mobile",
+                    "Gateway de pagamento do Mercado Pago",
+                    "Painel Administrativo para gerenciamento dos sorteios, usuários, afiliados",
+                    "O usuário afiliado possui dashboard para gerenciar sua comissão e seus saques",
+                    "O Dashboard pode criar novas campanhas, criar novos usuários e gerenciar os afiliados",
+                    "O carrinho possui todas as funções necessárias pra calcular a ordem do usuário junto com a  quantidade e o preço utilizando context API.",
+                    "Cada usuário possui um gerenciador de tickets onde pode consultá-los e verificar suas cotas."]
+            },
+
+        ],
+        tags: ["Next Js 14", "React.Js", "Typescript", "Shadcn Ui", "Prisma ORM", "Stripe", "Context API", "Next Auth", "Postgres SQL", "REST API", "Serve Actions", "Vercel Deploy", "Neon Database"],
+    },
     {
         title: "FSW FOODS",
         image: ["/fsw-foods-0.png", "/fsw-foods-1.png", "/fsw-foods-2.png", "/fsw-foods-3.png", "/fsw-foods-4.png", "/fsw-foods-5.png", "/fsw-foods-6.png", "/fsw-foods-7.png", "/fsw-foods-8.png"],
