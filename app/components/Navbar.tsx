@@ -25,9 +25,9 @@ export default function Navbar() {
             )}>
                 <div />
                 <div />
-                <MenuItem title="About" />
-                <MenuItem title="Projects" />
-                <MenuItem title="Services" />
+                <MenuItem title="Sobre mim" />
+                <MenuItem title="Projetos" />
+                <MenuItem title="Serviços" />
             </nav>)
                 : (<nav className={cn(
                     `sticky -mt-14 top-0 z-50 flex justify-end items-center px-3 bg-black/40 h-14 text-white `,

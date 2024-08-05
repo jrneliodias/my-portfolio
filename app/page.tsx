@@ -9,8 +9,8 @@ export default function Home() {
   return (
     <main className="w-screen max-w-screen">
       <Hero />
-      <About />
       <Projects />
+      <About />
       <Services />
       <Footer />
     </main>
