@@ -1,0 +1,36 @@
+{
+  "navbar": {
+    "about": "About me",
+    "projects": "Projects",
+    "services": "Services"
+  },
+  "hero": {
+    "greeting": "Hi, my name is",
+    "role": "Full Stack Developer"
+  },
+  "about": {
+    "title": "About me",
+    "summary": "I'm a full-stack developer with a bachelor's degree in Control and Automation Engineering and Systems Analysis and Development. My main focus today is building web applications for desktop and mobile devices using the latest market technologies."
+  },
+  "services": {
+    "title": "Services",
+    "spa": {
+      "title": "Single Page Application (SPA)",
+      "description": "I develop responsive web apps such as landing pages, online stores or dashboards. Transform your digital vision into reality with a personalized touch."
+    },
+    "api": {
+      "title": "API Development",
+      "description": "I develop robust and scalable APIs to power your web applications. With experience, I ensure efficient and secure integrations between front-end and back-end. I customize solutions to your specific needs. Take your digital infrastructure to the next level."
+    },
+    "database": {
+      "title": "Database",
+      "description": "I offer custom database development services tailored to your specific needs. As a full stack developer, I design efficient and scalable solutions for data storage and management."
+    }
+  },
+  "footer": {
+    "contact": "Contact"
+  },
+  "projects": {
+    "title": "Projects"
+  }
+}

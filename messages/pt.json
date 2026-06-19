@@ -1,0 +1,36 @@
+{
+  "navbar": {
+    "about": "Sobre mim",
+    "projects": "Projetos",
+    "services": "Serviços"
+  },
+  "hero": {
+    "greeting": "Olá, meu nome é",
+    "role": "Desenvolvedor Full Stack"
+  },
+  "about": {
+    "title": "Sobre mim",
+    "summary": "Sou um desenvolvedor full-stack com bacharelado em engenharia de controle e automação e Análise e Desenvolvimento de Sistemas. Meu principal foco hoje é construir aplicações web para dispositivos desktop e mobile usando as últimas tecnologias do mercado."
+  },
+  "services": {
+    "title": "Serviços",
+    "spa": {
+      "title": "Aplicação de Página Única (SPA)",
+      "description": "Desenvolvo web apps responsivos como Landing pages, lojas virtuais ou Dashboards. Transforme sua visão digital em realidade com um toque personalizado."
+    },
+    "api": {
+      "title": "Construção de API",
+      "description": "Desenvolvo APIs robustas e escaláveis para potencializar suas aplicações web. Com experiência, garanto integrações eficientes e seguras entre front-end e back-end. Personalizo soluções para suas necessidades específicas. Leve sua infraestrutura digital ao próximo nível."
+    },
+    "database": {
+      "title": "Banco de dados",
+      "description": "Ofereço serviços de desenvolvimento de banco de dados personalizados para atender às suas necessidades específicas. Como desenvolvedor full stack, projeto soluções eficientes e escaláveis para armazenamento e gestão de dados."
+    }
+  },
+  "footer": {
+    "contact": "Contatos"
+  },
+  "projects": {
+    "title": "Projetos"
+  }
+}
