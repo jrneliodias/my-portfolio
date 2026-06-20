@@ -31,6 +31,8 @@
     "contact": "Contatos"
   },
   "projects": {
-    "title": "Projetos"
+    "title": "Projetos",
+    "repository": "Repositório",
+    "production": "Produção"
   }
 }

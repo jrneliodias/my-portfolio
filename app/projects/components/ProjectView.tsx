@@ -9,6 +9,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
 import Markdown from '@/app/projects/components/markdown';
+import { useTranslations } from 'next-intl';
 import type { ProjectItem } from '@/constants';
 
 type ProjectViewProps = {
@@ -16,6 +17,7 @@ type ProjectViewProps = {
 };
 
 export default function ProjectView({ project }: ProjectViewProps) {
+  const t = useTranslations('projects');
   const [isOpen, setIsOpen] = useState(false);
   const [carrouselImage, setCarrouselImage] = useState(project.image[0]);
 
@@ -42,7 +44,7 @@ export default function ProjectView({ project }: ProjectViewProps) {
                 <Button variant="default" asChild className="flex gap-2 max-w-40">
                   <Link href={project.link.repository}>
                     <Github />
-                    Repositório
+                    {t('repository')}
                   </Link>
                 </Button>
               )}
@@ -50,7 +52,7 @@ export default function ProjectView({ project }: ProjectViewProps) {
                 <Button variant="secondary" asChild className="flex gap-2 max-w-40 animate-pulse">
                   <Link href={project.link.production}>
                     <Rocket />
-                    Produção
+                    {t('production')}
                   </Link>
                 </Button>
               )}
