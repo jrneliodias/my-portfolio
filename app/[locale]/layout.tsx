@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { Inter, Space_Grotesk } from 'next/font/google';
 import { cn } from '@/lib/utils';
 import Navbar from '@/app/components/Navbar';
+import { ThemeProvider } from '@/app/components/ThemeProvider';
 import type { Metadata } from 'next';
 import { routing } from '@/i18n/routing';
 
@@ -35,11 +36,13 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale}>
+    <html lang={locale} suppressHydrationWarning>
       <body className={cn(inter.className, spaceGrotesk.variable)}>
         <NextIntlClientProvider messages={messages}>
-          <Navbar />
-          {children}
+          <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
+            <Navbar />
+            {children}
+          </ThemeProvider>
         </NextIntlClientProvider>
       </body>
     </html>
