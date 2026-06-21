@@ -1,13 +1,18 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
-import { Inter } from 'next/font/google';
+import { Inter, Space_Grotesk } from 'next/font/google';
 import { cn } from '@/lib/utils';
 import Navbar from '@/app/components/Navbar';
 import type { Metadata } from 'next';
 import { routing } from '@/i18n/routing';
 
 const inter = Inter({ subsets: ['latin'] });
+const spaceGrotesk = Space_Grotesk({
+  subsets: ['latin'],
+  variable: '--font-display',
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: 'Nélio Dias',
@@ -31,7 +36,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <body className={cn(inter.className)}>
+      <body className={cn(inter.className, spaceGrotesk.variable)}>
         <NextIntlClientProvider messages={messages}>
           <Navbar />
           {children}
