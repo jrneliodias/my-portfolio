@@ -5,10 +5,14 @@ const Summary = async () => {
 
   return (
     <>
-      <p className="text-4xl text-center lg:text-left mb-8 font-bold uppercase">
+      <p className="font-display text-4xl lg:text-5xl text-center lg:text-left mb-8 font-bold uppercase tracking-tight">
         {t('title')}
       </p>
-      <article className="text-md lg:text-xl" itemScope itemType="https://schema.org/author">
+      <article
+        className="text-base lg:text-xl leading-relaxed text-slate-600 dark:text-slate-300"
+        itemScope
+        itemType="https://schema.org/author"
+      >
         <p className="mb-5">{t('summary')}</p>
       </article>
     </>
