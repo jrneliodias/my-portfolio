@@ -14,6 +14,7 @@
   },
   "services": {
     "title": "Serviços",
+    "cta": "Entre em contato",
     "spa": {
       "title": "Aplicação de Página Única (SPA)",
       "description": "Desenvolvo web apps responsivos como Landing pages, lojas virtuais ou Dashboards. Transforme sua visão digital em realidade com um toque personalizado."

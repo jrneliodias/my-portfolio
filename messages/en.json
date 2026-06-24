@@ -14,6 +14,7 @@
   },
   "services": {
     "title": "Services",
+    "cta": "Get in touch",
     "spa": {
       "title": "Single Page Application (SPA)",
       "description": "I develop responsive web apps such as landing pages, online stores or dashboards. Transform your digital vision into reality with a personalized touch."
