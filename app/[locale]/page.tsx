@@ -1,4 +1,5 @@
 import About from '@/app/components/About';
+import Contact from '@/app/components/Contact';
 import Footer from '@/app/components/Footer';
 import Hero from '@/app/components/Hero';
 import Projects from '@/app/components/Projects';
@@ -14,6 +15,7 @@ export default function Home({ params }: { params: { locale: string } }) {
       <Projects data={getProjectData(locale)} />
       <About timelineData={getTimelineData(locale)} />
       <Services />
+      <Contact />
       <Footer />
     </main>
   );

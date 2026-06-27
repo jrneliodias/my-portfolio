@@ -2,7 +2,8 @@
   "navbar": {
     "about": "About me",
     "projects": "Projects",
-    "services": "Services"
+    "services": "Services",
+    "contact": "Contact"
   },
   "hero": {
     "greeting": "Hi, my name is",
@@ -14,6 +15,7 @@
   },
   "services": {
     "title": "Services",
+    "cta": "Get in touch",
     "spa": {
       "title": "Single Page Application (SPA)",
       "description": "I develop responsive web apps such as landing pages, online stores or dashboards. Transform your digital vision into reality with a personalized touch."
@@ -26,6 +28,12 @@
       "title": "Database",
       "description": "I offer custom database development services tailored to your specific needs. As a full stack developer, I design efficient and scalable solutions for data storage and management."
     }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Available for freelance projects",
+    "copy": "Copy email",
+    "copied": "Email copied!"
   },
   "footer": {
     "contact": "Contact"

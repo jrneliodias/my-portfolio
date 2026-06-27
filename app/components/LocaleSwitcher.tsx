@@ -19,7 +19,9 @@ export default function LocaleSwitcher() {
         onClick={() => switchLocale('pt')}
         className={cn(
           'transition-colors',
-          locale === 'pt' ? 'text-blue-500 font-bold' : 'text-slate-400 hover:text-white'
+          locale === 'pt'
+            ? 'text-violet-500 font-bold'
+            : 'text-slate-400 hover:text-slate-900 dark:hover:text-white'
         )}
       >
         PT
@@ -29,7 +31,9 @@ export default function LocaleSwitcher() {
         onClick={() => switchLocale('en')}
         className={cn(
           'transition-colors',
-          locale === 'en' ? 'text-blue-500 font-bold' : 'text-slate-400 hover:text-white'
+          locale === 'en'
+            ? 'text-violet-500 font-bold'
+            : 'text-slate-400 hover:text-slate-900 dark:hover:text-white'
         )}
       >
         EN

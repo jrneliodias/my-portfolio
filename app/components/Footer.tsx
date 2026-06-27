@@ -1,14 +1,16 @@
 import SocialMedia from '@/app/static/SocialMedia';
-import { getTranslations } from 'next-intl/server';
 
-export default async function Footer() {
-  const t = await getTranslations('footer');
-
+export default function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-amber-600 to-slate-500">
-      <div id="Footer" className="flex flex-col gap-2 justify-center items-center p-4 bg-gradient-to-b from-slate-900 to-slate-800 h-max text-white">
-        <p>{t('contact')}</p>
+    <footer className="border-t border-slate-200 dark:border-slate-700">
+      <div
+        id="Footer"
+        className="flex flex-col gap-3 justify-center items-center p-8 bg-background text-slate-900 dark:text-white"
+      >
         <SocialMedia size={30} />
+        <p className="text-sm text-slate-500 dark:text-slate-400">
+          © {new Date().getFullYear()} Nélio Dias
+        </p>
       </div>
     </footer>
   );

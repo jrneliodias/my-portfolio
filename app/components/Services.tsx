@@ -1,46 +1,46 @@
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import Image from 'next/image';
 import { getTranslations } from 'next-intl/server';
 
 export default async function Services() {
   const t = await getTranslations('services');
+  const services = [
+    { name: t('spa.title'), desc: t('spa.description') },
+    { name: t('api.title'), desc: t('api.description') },
+    { name: t('database.title'), desc: t('database.description') },
+  ];
 
   return (
-    <section id="Services" className="flex flex-col items-center bg-gradient-to-b from-slate-800 via-slate-900 to-slate-900 min-h-screen text-white py-16">
-      <div className="flex flex-col gap-5 justify-start items-center w-5/6 lg:gap-10 flex-1">
-        <h1 className="font-bold text-4xl uppercase">{t('title')}</h1>
-        <div className="flex flex-col lg:flex-row w-11/12 h-full gap-4">
-          <Card className="flex-1 hover:bg-slate-700/80 bg-slate-700 text-white">
-            <div className="flex-1">
-              <Image src="/website-program-svgrepo-com.svg" height={0} width={0} alt="spa" className="h-auto w-5/6 lg:w-11/12 p-6 mx-auto" />
+    <section
+      id="Services"
+      className="flex flex-col items-center bg-background min-h-screen text-slate-900 dark:text-white py-16 lg:py-24"
+    >
+      <div className="flex flex-col w-5/6 lg:w-4/5 flex-1">
+        <h2 className="font-display font-bold text-4xl lg:text-5xl mb-16">
+          {t('title')}
+        </h2>
+        <div className="flex flex-col">
+          {services.map((s) => (
+            <div
+              key={s.name}
+              className="border-t border-slate-200 dark:border-slate-700 py-10 lg:py-14 flex flex-col lg:flex-row lg:gap-16"
+            >
+              <div className="lg:w-2/5 mb-4 lg:mb-0">
+                <h3 className="font-display font-bold text-2xl lg:text-3xl">{s.name}</h3>
+              </div>
+              <div className="lg:w-3/5">
+                <p className="text-base leading-relaxed text-slate-700 dark:text-slate-200">
+                  {s.desc}
+                </p>
+              </div>
             </div>
-            <CardHeader>
-              <CardTitle>{t('spa.title')}</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p>{t('spa.description')}</p>
-            </CardContent>
-          </Card>
-
-          <Card className="flex-1 hover:bg-slate-700/80 bg-slate-700 flex flex-col justify-between text-white">
-            <Image src="/platform-program-svgrepo-com.svg" height={0} width={0} alt="api" className="w-5/6 lg:w-11/12 p-6 mx-auto fill-white" />
-            <CardHeader>
-              <CardTitle>{t('api.title')}</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p>{t('api.description')}</p>
-            </CardContent>
-          </Card>
-
-          <Card className="flex-1 hover:bg-slate-700/80 bg-slate-700 text-white">
-            <Image src="/database-svgrepo-com.svg" height={0} width={0} alt="database" className="h-auto w-5/6 lg:w-11/12 p-6 mx-auto" />
-            <CardHeader>
-              <CardTitle>{t('database.title')}</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p>{t('database.description')}</p>
-            </CardContent>
-          </Card>
+          ))}
+          <div className="border-t border-slate-200 dark:border-slate-700 pt-10 flex justify-end">
+            <a
+              href="#Contact"
+              className="px-8 py-3 rounded-full bg-violet-600 hover:bg-violet-700 text-white font-display font-semibold text-lg transition-colors duration-200"
+            >
+              {t('cta')}
+            </a>
+          </div>
         </div>
       </div>
     </section>

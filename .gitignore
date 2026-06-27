@@ -20,6 +20,11 @@
 .DS_Store
 *.pem
 
+# tooling
+.agents/
+.claude/
+.impeccable/
+
 # debug
 npm-debug.log*
 yarn-debug.log*

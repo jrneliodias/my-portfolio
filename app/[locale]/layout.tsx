@@ -1,13 +1,25 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
-import { Inter } from 'next/font/google';
+import { Bricolage_Grotesque, Source_Sans_3 } from 'next/font/google';
 import { cn } from '@/lib/utils';
 import Navbar from '@/app/components/Navbar';
+import { ThemeProvider } from '@/app/components/ThemeProvider';
 import type { Metadata } from 'next';
 import { routing } from '@/i18n/routing';
 
-const inter = Inter({ subsets: ['latin'] });
+const bricolageGrotesque = Bricolage_Grotesque({
+  subsets: ['latin'],
+  weight: ['500', '700', '800'],
+  variable: '--font-display',
+  display: 'swap',
+});
+const sourceSans3 = Source_Sans_3({
+  subsets: ['latin'],
+  weight: ['400', '600'],
+  variable: '--font-sans',
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: 'Nélio Dias',
@@ -30,11 +42,13 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale}>
-      <body className={cn(inter.className)}>
+    <html lang={locale} suppressHydrationWarning>
+      <body className={cn(sourceSans3.className, bricolageGrotesque.variable, sourceSans3.variable)}>
         <NextIntlClientProvider messages={messages}>
-          <Navbar />
-          {children}
+          <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
+            <Navbar />
+            {children}
+          </ThemeProvider>
         </NextIntlClientProvider>
       </body>
     </html>
