@@ -2,7 +2,8 @@
   "navbar": {
     "about": "About me",
     "projects": "Projects",
-    "services": "Services"
+    "services": "Services",
+    "contact": "Contact"
   },
   "hero": {
     "greeting": "Hi, my name is",
@@ -27,6 +28,12 @@
       "title": "Database",
       "description": "I offer custom database development services tailored to your specific needs. As a full stack developer, I design efficient and scalable solutions for data storage and management."
     }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Available for freelance projects",
+    "copy": "Copy email",
+    "copied": "Email copied!"
   },
   "footer": {
     "contact": "Contact"

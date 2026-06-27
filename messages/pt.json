@@ -2,7 +2,8 @@
   "navbar": {
     "about": "Sobre mim",
     "projects": "Projetos",
-    "services": "Serviços"
+    "services": "Serviços",
+    "contact": "Contato"
   },
   "hero": {
     "greeting": "Olá, meu nome é",
@@ -27,6 +28,12 @@
       "title": "Banco de dados",
       "description": "Ofereço serviços de desenvolvimento de banco de dados personalizados para atender às suas necessidades específicas. Como desenvolvedor full stack, projeto soluções eficientes e escaláveis para armazenamento e gestão de dados."
     }
+  },
+  "contact": {
+    "title": "Contato",
+    "subtitle": "Disponível para projetos freelance",
+    "copy": "Copiar email",
+    "copied": "Email copiado!"
   },
   "footer": {
     "contact": "Contatos"

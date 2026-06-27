@@ -14,7 +14,7 @@ import LocaleSwitcher from './LocaleSwitcher';
 import { ThemeToggle } from '@/components/ui/theme-toggle';
 import { useActiveSection } from '@/hooks/useActiveSection';
 
-const NAV_SECTIONS = ['About', 'Projects', 'Services'];
+const NAV_SECTIONS = ['About', 'Projects', 'Services', 'Contact'];
 
 export default function Navbar() {
   const isAtTop = UseScrollPos();
@@ -41,6 +41,7 @@ export default function Navbar() {
           <MenuItem title={t('about')} sectionId="About" isActive={activeSection === 'About'} />
           <MenuItem title={t('projects')} sectionId="Projects" isActive={activeSection === 'Projects'} />
           <MenuItem title={t('services')} sectionId="Services" isActive={activeSection === 'Services'} />
+          <MenuItem title={t('contact')} sectionId="Contact" isActive={activeSection === 'Contact'} />
           <LocaleSwitcher />
           <ThemeToggle />
         </nav>
@@ -66,6 +67,9 @@ export default function Navbar() {
                 </Button>
                 <Button variant="ghost" className="justify-start" onClick={handleOpenSheet}>
                   <MenuItem title={t('services')} sectionId="Services" isActive={activeSection === 'Services'} />
+                </Button>
+                <Button variant="ghost" className="justify-start" onClick={handleOpenSheet}>
+                  <MenuItem title={t('contact')} sectionId="Contact" isActive={activeSection === 'Contact'} />
                 </Button>
               </div>
               <div className="flex flex-col gap-4 items-start">

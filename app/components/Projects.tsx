@@ -14,7 +14,7 @@ export default async function Projects({ data }: ProjectsProps) {
   return (
     <section
       id="Projects"
-      className="flex flex-col justify-evenly gap-4 py-12 items-center bg-gradient-to-b from-slate-100 to-slate-200 dark:from-slate-900 dark:via-slate-900 dark:to-slate-800 min-h-screen text-slate-900 dark:text-white"
+      className="flex flex-col justify-evenly gap-4 py-12 items-center bg-background min-h-screen text-slate-900 dark:text-white"
     >
       <h1 className="font-display font-bold text-4xl lg:text-5xl uppercase tracking-tight pt-10">
         {t('title')}
